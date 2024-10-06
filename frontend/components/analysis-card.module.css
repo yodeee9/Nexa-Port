@@ -1,0 +1,15 @@
+.header {
+    @apply flex flex-row items-center justify-between space-y-0 pb-2;
+  }
+  
+  .title {
+    @apply text-xl font-medium;
+  }
+  
+  .value {
+    @apply text-4xl font-bold;
+  }
+  
+  .description {
+    @apply text-2xl text-muted-foreground;
+  }

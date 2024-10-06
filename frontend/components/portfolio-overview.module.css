@@ -1,0 +1,51 @@
+.container {
+  @apply w-full lg:w-1/3 p-4 bg-white;
+}
+
+.holdings {
+  @apply mt-4;
+}
+
+.holdingsTitle {
+  @apply text-lg font-semibold mb-2;
+}
+
+.scrollArea {
+  @apply h-[300px];
+}
+
+.holdingItem {
+  @apply flex justify-between items-center py-2 border-b;
+}
+
+.holdingInfo {
+  @apply flex flex-col;
+}
+
+.holdingName {
+  @apply font-medium;
+}
+
+.holdingSymbol {
+  @apply text-sm text-gray-500;
+}
+
+.holdingMetrics {
+  @apply text-right flex items-center;
+}
+
+.holdingAllocation {
+  @apply font-medium mr-2;
+}
+
+.holdingPerformance {
+  @apply text-sm;
+}
+
+.positive {
+  @apply text-green-600;
+}
+
+.negative {
+  @apply text-red-600;
+}

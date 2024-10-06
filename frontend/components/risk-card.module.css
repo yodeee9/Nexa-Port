@@ -1,0 +1,19 @@
+.header {
+    @apply flex flex-row items-center justify-between space-y-0 pb-2;
+  }
+  
+  .titleBlue {
+    @apply text-xl font-medium text-blue-600;
+  }
+
+  .titleGreen {
+    @apply text-xl font-medium text-green-600;
+  }
+  
+  .value {
+    @apply text-4xl font-bold;
+  }
+  
+  .description {
+    @apply mt-4 text-xl;
+  }

@@ -1,0 +1,69 @@
+.container {
+  @apply flex-1 p-4;
+}
+
+.card {
+  @apply h-full;
+}
+
+.tabsList {
+  @apply grid w-full grid-cols-3 text-xl;
+}
+
+.tab {
+  @apply text-xl
+}
+
+.overallContent {
+  @apply space-y-4;
+}
+
+.scoreContainer {
+  @apply flex items-center justify-between;
+}
+
+.score {
+  @apply text-4xl font-bold;
+}
+
+.progressBar {
+  @apply w-2/3;
+}
+
+.description {
+  @apply text-lg leading-relaxed ;
+}
+
+
+.analysisContainer {
+  @apply space-y-4 flex-1 overflow-y-auto;
+  height: 80vh;
+}
+
+.feedbackContainer {
+  @apply mt-4 flex justify-between items-center;
+}
+
+.scoreText {
+  @apply text-sm font-medium;
+}
+
+.scoreValue {
+  @apply text-lg font-bold;
+}
+
+.feedbackButtons {
+  @apply flex space-x-2;
+}
+
+.feedbackButton {
+  @apply flex items-center px-3 py-1 text-sm font-medium rounded-md;
+}
+
+.helpfulButton {
+  @apply bg-green-100 text-green-800 hover:bg-green-200;
+}
+
+.notHelpfulButton {
+  @apply bg-red-100 text-red-800 hover:bg-red-200;
+}

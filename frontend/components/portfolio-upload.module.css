@@ -1,0 +1,103 @@
+.wrapper {
+  @apply mx-auto p-4 min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-100 to-gray-200;
+}
+
+.motionDiv {
+  @apply w-full max-w-3xl;
+}
+
+.card {
+  @apply w-full shadow-lg;
+}
+
+.cardHeader {
+  @apply space-y-1;
+}
+
+.cardTitle {
+  @apply text-2xl font-bold text-center;
+}
+
+.cardDescription {
+  @apply text-center;
+}
+
+.contentSpace {
+  @apply space-y-4;
+}
+
+.dropzone {
+  @apply flex items-center justify-center w-full;
+}
+
+.dropzoneLabel {
+  @apply flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 hover:bg-gray-100;
+}
+
+.dropzoneContent {
+  @apply flex flex-col items-center justify-center pt-5 pb-6;
+}
+
+.uploadIcon {
+  @apply w-10 h-10 mb-3 text-gray-400;
+}
+
+.dropzoneText {
+  @apply mb-2 text-sm text-gray-500;
+}
+
+.dropzoneTextBold {
+  @apply font-semibold;
+}
+
+.dropzoneSubtext {
+  @apply text-xs text-gray-500;
+}
+
+.hiddenInput {
+  @apply hidden;
+}
+
+.alert {
+  @apply mt-4;
+}
+
+.alertIcon {
+  @apply h-4 w-4;
+}
+
+.successAlert {
+  @apply bg-green-50;
+}
+
+.successIcon {
+  @apply h-4 w-4 text-green-600;
+}
+
+.previewTitle {
+  @apply text-lg font-semibold mb-2;
+}
+
+.tableContainer {
+  @apply overflow-x-auto rounded-lg border border-gray-200;
+}
+
+.tableHead {
+  @apply bg-gray-50;
+}
+
+.uploadButton {
+  @apply w-full;
+}
+
+.uploadingContent {
+  @apply w-full;
+}
+
+.progressBar {
+  @apply w-full mb-2;
+}
+
+.buttonIcon {
+  @apply mr-2 h-4 w-4;
+}
