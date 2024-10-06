@@ -246,3 +246,4 @@ $RECYCLE.BIN/
 .env
 *.csv
 */db
+*.log
