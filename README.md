@@ -1,13 +1,11 @@
-# Moxie - AI Apartment Concierge
+# Nexa Port - AI Portfolio Management
 
-Moxie is an advanced AI-powered Apartment Concierge designed to revolutionize your apartment hunting experience. 
-By leveraging cutting-edge artificial intelligence, Moxie streamlines the often complex and time-consuming process of finding your ideal home.
+Nexa Port is an advanced AI-powered Portfolio Management system designed to revolutionize your portfolio management experience. 
 
 ## Features
 
-- **Personalized Apartment Search**: Moxie can search for apartments based on your specific needs and preferences.
-- **Safety Information**: Provides safety news and information about the city or neighborhood where you're interested in living.
-- **Automated Communication**: Ability to send emails to apartment owners or managers on your behalf.
+- **Portfolio Analysis**: Nexa Port provides a comprehensive analysis of your portfolio, including its performance, risk, and return.
+- **Investment Strategy**: Nexa Port provides a comprehensive analysis of your portfolio, including its performance, risk, and return.- 
 
 ## How to Deploy
 
@@ -26,4 +24,4 @@ This command will build and start the Moxie services in detached mode.
 
 ## Usage
 
-After deployment, you can interact with Moxie through web browser.
+After deployment, you can interact with Nexa Port through web browser.
