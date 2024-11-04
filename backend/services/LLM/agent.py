@@ -1,5 +1,5 @@
 import pandas as pd
-import agentops
+# import agentops
 from typing import Dict, Optional
 from pydantic import BaseModel, Field
 from tools.halluminate import ReviewTools
@@ -15,7 +15,7 @@ from crewai_tools import (
     WebsiteSearchTool,
 )
 from crewai.process import Process
-agentops.init(api_key=AGENTOPS_API_KEY)
+# agentops.init(api_key=AGENTOPS_API_KEY)
 
 # Tools
 search_tool = SerperDevTool(n_results=3)
@@ -75,14 +75,14 @@ class FinancialCrew:
                 performance_analyst,
                 risk_analyst,
                 portfolio_advisor,
-                advise_reviewer,
+                # advise_reviewer,
                 manager
             ],
             tasks=[
                 performance_task,
                 risk_task,
                 investment_suggestion_task,
-                review_suggestion,
+                # review_suggestion,
                 manager_task
             ],
             verbose=True,
@@ -101,17 +101,17 @@ class FinancialAnalysisAgents:
                 base_url="http://localhost:11434",
             )
         else:
-            self.llm = LLM(
-                model="gpt-4o-mini",
-                temperature=0,
-                api_key=OPENAI_API_KEY,
-            )
-            # self.llm=ChatGroq(
-            # temperature=0,
-            # model="groq/llama-3.1-70b-versatile",
-            # groq_api_key=GROQ_API_KEY,
-            # verbose=True
+            # self.llm = LLM(
+            #     model="gpt-4o-mini",
+            #     temperature=0,
+            #     api_key=OPENAI_API_KEY,
             # )
+            self.llm=ChatGroq(
+                temperature=0,
+                model="groq/llama-3.2-90b-text-preview",
+                groq_api_key=GROQ_API_KEY,
+                verbose=True
+            )
 
     def performance_analyst(self):
         return Agent(
@@ -286,6 +286,7 @@ class FinancialAnalysisTasks:
             description=dedent(f"""
                 !!! note: please remain the result of performance_analysis and risk_analysis tasks in output.
                 !!! please make sure the output is in json format, must not include comments.
+                !!! please do not mention the name of the referenceInvestor in the portfolio_suggestion.
                 If '{self.referenceInvestor}' is 'Portfolio Manager', Please do not use the SerperDevTool.
 
                 Create an investment suggestion(portfolio_suggestion) that aligns with the style and philosophy of {self.referenceInvestor}, based on the performance and risk analysis results.
@@ -302,7 +303,7 @@ class FinancialAnalysisTasks:
             
                 Ensure the suggestion is comprehensive, actionable, and aligns with both the overall investment strategy identified in the previous analyses and {self.referenceInvestor}'s investment approach.
             
-                The final output should feel as if {self.referenceInvestor} personally analyzed the portfolio and provided their insights.
+                The final output should be presented as if it were personally analyzed and crafted by {self.referenceInvestor}, though their name is not explicitly mentioned.
             """),
             agent=agent,
             expected_output="""

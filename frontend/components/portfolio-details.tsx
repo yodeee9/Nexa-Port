@@ -13,7 +13,13 @@ import { toast, Toaster } from 'react-hot-toast';
 const suggestion = {
     improvement: 10
 }
-export default function PortfolioDetails({ activeTab, setActiveTab }) {
+
+interface PortfolioDetailsProps {
+  activeTab: string;
+  setActiveTab: (tab: string) => void;
+}
+
+export default function PortfolioDetails({ activeTab, setActiveTab }: PortfolioDetailsProps) {
   const [analysisData, setAnalysisData] = useState<AnalysisResult | null>(null);
 
   useEffect(() => {
