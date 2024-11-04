@@ -22,6 +22,35 @@ Nexa Port is an advanced AI-powered Portfolio Management system designed to revo
 - Docker and Docker Compose installed
 - Node.js 18+ for local development
 - Python 3.9+ for backend services
+- Ollama (required for security mode)
+
+### Security Mode Setup
+
+When using security mode, Ollama needs to be installed and configured:
+
+#### Install Ollama
+
+**macOS**:
+- Download from [Ollama's official website](https://ollama.com/download)
+
+**Linux**:
+```bash
+curl -fsSL https://ollama.com/install.sh | sh
+```
+
+**Windows**:
+- Download from [Ollama's official website](https://ollama.com/download)
+
+#### Configure Ollama
+1. Start Ollama service:
+```bash
+ollama serve
+```
+
+2. Pull required models:
+```bash
+ollama pull llama3.2
+```
 
 ### Deployment Steps
 
